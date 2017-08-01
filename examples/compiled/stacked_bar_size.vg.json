@@ -15,6 +15,10 @@
             },
             "transform": [
                 {
+                    "type": "filter",
+                    "expr": "datum[\"undefined\"] !== null && !isNaN(datum[\"undefined\"])"
+                },
+                {
                     "type": "formula",
                     "as": "month_date",
                     "expr": "datetime(0, month(datum[\"date\"]), 1, 0, 0, 0, 0)"

@@ -21,6 +21,10 @@
                     "expr": "datum[\"date\"] !== null && !isNaN(datum[\"date\"])"
                 },
                 {
+                    "type": "filter",
+                    "expr": "datum[\"count\"] !== null && !isNaN(datum[\"count\"])"
+                },
+                {
                     "type": "formula",
                     "as": "yearmonth_date",
                     "expr": "datetime(year(datum[\"date\"]), month(datum[\"date\"]), 1, 0, 0, 0, 0)"

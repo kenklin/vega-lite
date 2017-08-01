@@ -26,6 +26,10 @@
                     "as": "precipitation"
                 },
                 {
+                    "type": "filter",
+                    "expr": "datum[\"precipitation\"] !== null && !isNaN(datum[\"precipitation\"])"
+                },
+                {
                     "type": "formula",
                     "as": "month_date",
                     "expr": "datetime(0, month(datum[\"date\"]), 1, 0, 0, 0, 0)"
@@ -55,6 +59,10 @@
                     "type": "formula",
                     "expr": "toNumber(datum[\"precipitation\"])",
                     "as": "precipitation"
+                },
+                {
+                    "type": "filter",
+                    "expr": "datum[\"precipitation\"] !== null && !isNaN(datum[\"precipitation\"])"
                 },
                 {
                     "type": "aggregate",

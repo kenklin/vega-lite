@@ -16,6 +16,10 @@
             "source": "source_0",
             "transform": [
                 {
+                    "type": "filter",
+                    "expr": "datum[\"*\"] !== null && !isNaN(datum[\"*\"])"
+                },
+                {
                     "type": "aggregate",
                     "groupby": [
                         "Origin",

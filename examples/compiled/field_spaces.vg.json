@@ -65,7 +65,11 @@
                 },
                 {
                     "type": "filter",
-                    "expr": "datum[\"a b\"] !== null && !isNaN(datum[\"a b\"]) && datum[\"c d\"] !== null && !isNaN(datum[\"c d\"])"
+                    "expr": "datum[\"a b\"] !== null && !isNaN(datum[\"a b\"])"
+                },
+                {
+                    "type": "filter",
+                    "expr": "datum[\"c d\"] !== null && !isNaN(datum[\"c d\"])"
                 }
             ]
         }

@@ -16,6 +16,10 @@
             "transform": [
                 {
                     "type": "filter",
+                    "expr": "datum[\"people\"] !== null && !isNaN(datum[\"people\"])"
+                },
+                {
+                    "type": "filter",
                     "expr": "datum.year == 2000"
                 },
                 {

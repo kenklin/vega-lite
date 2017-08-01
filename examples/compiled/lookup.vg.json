@@ -19,6 +19,10 @@
             },
             "transform": [
                 {
+                    "type": "filter",
+                    "expr": "datum[\"age\"] !== null && !isNaN(datum[\"age\"])"
+                },
+                {
                     "type": "lookup",
                     "from": "source_1",
                     "key": "name",

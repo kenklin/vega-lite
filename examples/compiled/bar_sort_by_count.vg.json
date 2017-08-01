@@ -10,7 +10,13 @@
             "url": "data/cars.json",
             "format": {
                 "type": "json"
-            }
+            },
+            "transform": [
+                {
+                    "type": "filter",
+                    "expr": "datum[\"undefined\"] !== null && !isNaN(datum[\"undefined\"])"
+                }
+            ]
         },
         {
             "name": "data_0",

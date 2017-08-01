@@ -32,7 +32,26 @@
                 },
                 {
                     "type": "filter",
+<<<<<<< d0766d55192880cdef1e90d253ad2eb858df8429:examples/compiled/scatter_connected.vg.json
                     "expr": "datum[\"miles\"] !== null && !isNaN(datum[\"miles\"]) && datum[\"gas\"] !== null && !isNaN(datum[\"gas\"])"
+=======
+                    "expr": "datum[\"miles\"] !== null && !isNaN(datum[\"miles\"])"
+                },
+                {
+                    "type": "filter",
+                    "expr": "datum[\"gas\"] !== null && !isNaN(datum[\"gas\"])"
+                },
+                {
+                    "type": "collect",
+                    "sort": {
+                        "field": [
+                            "year"
+                        ],
+                        "order": [
+                            "ascending"
+                        ]
+                    }
+>>>>>>> updated examples:examples/vg-specs/scatter_connected.vg.json
                 }
             ]
         },
@@ -52,7 +71,11 @@
                 },
                 {
                     "type": "filter",
-                    "expr": "datum[\"miles\"] !== null && !isNaN(datum[\"miles\"]) && datum[\"gas\"] !== null && !isNaN(datum[\"gas\"])"
+                    "expr": "datum[\"miles\"] !== null && !isNaN(datum[\"miles\"])"
+                },
+                {
+                    "type": "filter",
+                    "expr": "datum[\"gas\"] !== null && !isNaN(datum[\"gas\"])"
                 }
             ]
         }

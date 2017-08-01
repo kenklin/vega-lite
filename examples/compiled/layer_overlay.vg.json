@@ -19,6 +19,10 @@
                     "type": "formula",
                     "expr": "toNumber(datum[\"Horsepower\"])",
                     "as": "Horsepower"
+                },
+                {
+                    "type": "filter",
+                    "expr": "datum[\"Horsepower\"] !== null && !isNaN(datum[\"Horsepower\"])"
                 }
             ]
         },
@@ -51,6 +55,10 @@
                     "type": "formula",
                     "expr": "toNumber(datum[\"Horsepower\"])",
                     "as": "Horsepower"
+                },
+                {
+                    "type": "filter",
+                    "expr": "datum[\"Horsepower\"] !== null && !isNaN(datum[\"Horsepower\"])"
                 }
             ]
         },
@@ -85,6 +93,10 @@
                     "as": "Horsepower"
                 },
                 {
+                    "type": "filter",
+                    "expr": "datum[\"Horsepower\"] !== null && !isNaN(datum[\"Horsepower\"])"
+                },
+                {
                     "type": "aggregate",
                     "groupby": [
                         "Cylinders"
@@ -109,6 +121,10 @@
                     "type": "formula",
                     "expr": "toNumber(datum[\"Horsepower\"])",
                     "as": "Horsepower"
+                },
+                {
+                    "type": "filter",
+                    "expr": "datum[\"Horsepower\"] !== null && !isNaN(datum[\"Horsepower\"])"
                 },
                 {
                     "type": "aggregate",

@@ -12,6 +12,10 @@
             },
             "transform": [
                 {
+                    "type": "filter",
+                    "expr": "datum[\"Name\"] !== null && !isNaN(datum[\"Name\"])"
+                },
+                {
                     "type": "aggregate",
                     "groupby": [
                         "Origin"

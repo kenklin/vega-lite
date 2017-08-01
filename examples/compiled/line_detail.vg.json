@@ -18,7 +18,22 @@
             "transform": [
                 {
                     "type": "filter",
+<<<<<<< d0766d55192880cdef1e90d253ad2eb858df8429:examples/compiled/line_detail.vg.json
                     "expr": "datum[\"date\"] !== null && !isNaN(datum[\"date\"]) && datum[\"price\"] !== null && !isNaN(datum[\"price\"])"
+=======
+                    "expr": "datum[\"date\"] !== null && !isNaN(datum[\"date\"])"
+                },
+                {
+                    "type": "filter",
+                    "expr": "datum[\"price\"] !== null && !isNaN(datum[\"price\"])"
+                },
+                {
+                    "type": "collect",
+                    "sort": {
+                        "field": "date",
+                        "order": "descending"
+                    }
+>>>>>>> updated examples:examples/vg-specs/line_detail.vg.json
                 }
             ]
         }

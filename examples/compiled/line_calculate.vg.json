@@ -15,6 +15,10 @@
             },
             "transform": [
                 {
+                    "type": "filter",
+                    "expr": "datum[\"temp_range\"] !== null && !isNaN(datum[\"temp_range\"])"
+                },
+                {
                     "type": "formula",
                     "expr": "datum.temp_max - datum.temp_min",
                     "as": "temp_range"

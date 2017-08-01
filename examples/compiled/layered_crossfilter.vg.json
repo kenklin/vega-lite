@@ -33,6 +33,14 @@
                     "as": "distance"
                 },
                 {
+                    "type": "filter",
+                    "expr": "datum[\"distance\"] !== null && !isNaN(datum[\"distance\"])"
+                },
+                {
+                    "type": "filter",
+                    "expr": "datum[\"undefined\"] !== null && !isNaN(datum[\"undefined\"])"
+                },
+                {
                     "type": "extent",
                     "field": "distance",
                     "signal": "child_distance_layer_0_bin_maxbins_20_distance_extent"
@@ -49,10 +57,6 @@
                     "extent": {
                         "signal": "child_distance_layer_0_bin_maxbins_20_distance_extent"
                     }
-                },
-                {
-                    "type": "filter",
-                    "expr": "datum[\"distance\"] !== null && !isNaN(datum[\"distance\"])"
                 },
                 {
                     "type": "aggregate",
@@ -82,6 +86,14 @@
                     "as": "distance"
                 },
                 {
+                    "type": "filter",
+                    "expr": "datum[\"distance\"] !== null && !isNaN(datum[\"distance\"])"
+                },
+                {
+                    "type": "filter",
+                    "expr": "datum[\"undefined\"] !== null && !isNaN(datum[\"undefined\"])"
+                },
+                {
                     "type": "extent",
                     "field": "distance",
                     "signal": "child_distance_layer_1_bin_maxbins_20_distance_extent"
@@ -102,10 +114,6 @@
                 {
                     "type": "filter",
                     "expr": "!(length(data(\"brush_store\"))) || (vlInterval(\"brush_store\", datum))"
-                },
-                {
-                    "type": "filter",
-                    "expr": "datum[\"distance\"] !== null && !isNaN(datum[\"distance\"])"
                 },
                 {
                     "type": "aggregate",
@@ -135,6 +143,14 @@
                     "as": "delay"
                 },
                 {
+                    "type": "filter",
+                    "expr": "datum[\"delay\"] !== null && !isNaN(datum[\"delay\"])"
+                },
+                {
+                    "type": "filter",
+                    "expr": "datum[\"undefined\"] !== null && !isNaN(datum[\"undefined\"])"
+                },
+                {
                     "type": "extent",
                     "field": "delay",
                     "signal": "child_delay_layer_0_bin_maxbins_20_delay_extent"
@@ -151,10 +167,6 @@
                     "extent": {
                         "signal": "child_delay_layer_0_bin_maxbins_20_delay_extent"
                     }
-                },
-                {
-                    "type": "filter",
-                    "expr": "datum[\"delay\"] !== null && !isNaN(datum[\"delay\"])"
                 },
                 {
                     "type": "aggregate",
@@ -184,6 +196,14 @@
                     "as": "delay"
                 },
                 {
+                    "type": "filter",
+                    "expr": "datum[\"delay\"] !== null && !isNaN(datum[\"delay\"])"
+                },
+                {
+                    "type": "filter",
+                    "expr": "datum[\"undefined\"] !== null && !isNaN(datum[\"undefined\"])"
+                },
+                {
                     "type": "extent",
                     "field": "delay",
                     "signal": "child_delay_layer_1_bin_maxbins_20_delay_extent"
@@ -204,10 +224,6 @@
                 {
                     "type": "filter",
                     "expr": "!(length(data(\"brush_store\"))) || (vlInterval(\"brush_store\", datum))"
-                },
-                {
-                    "type": "filter",
-                    "expr": "datum[\"delay\"] !== null && !isNaN(datum[\"delay\"])"
                 },
                 {
                     "type": "aggregate",
@@ -237,6 +253,14 @@
                     "as": "time"
                 },
                 {
+                    "type": "filter",
+                    "expr": "datum[\"time\"] !== null && !isNaN(datum[\"time\"])"
+                },
+                {
+                    "type": "filter",
+                    "expr": "datum[\"undefined\"] !== null && !isNaN(datum[\"undefined\"])"
+                },
+                {
                     "type": "extent",
                     "field": "time",
                     "signal": "child_time_layer_0_bin_maxbins_20_time_extent"
@@ -253,10 +277,6 @@
                     "extent": {
                         "signal": "child_time_layer_0_bin_maxbins_20_time_extent"
                     }
-                },
-                {
-                    "type": "filter",
-                    "expr": "datum[\"time\"] !== null && !isNaN(datum[\"time\"])"
                 },
                 {
                     "type": "aggregate",
@@ -286,6 +306,14 @@
                     "as": "time"
                 },
                 {
+                    "type": "filter",
+                    "expr": "datum[\"time\"] !== null && !isNaN(datum[\"time\"])"
+                },
+                {
+                    "type": "filter",
+                    "expr": "datum[\"undefined\"] !== null && !isNaN(datum[\"undefined\"])"
+                },
+                {
                     "type": "extent",
                     "field": "time",
                     "signal": "child_time_layer_1_bin_maxbins_20_time_extent"
@@ -306,10 +334,6 @@
                 {
                     "type": "filter",
                     "expr": "!(length(data(\"brush_store\"))) || (vlInterval(\"brush_store\", datum))"
-                },
-                {
-                    "type": "filter",
-                    "expr": "datum[\"time\"] !== null && !isNaN(datum[\"time\"])"
                 },
                 {
                     "type": "aggregate",

@@ -24,6 +24,10 @@
                     "expr": "datum[\"Horsepower\"] !== null && !isNaN(datum[\"Horsepower\"])"
                 },
                 {
+                    "type": "filter",
+                    "expr": "datum[\"undefined\"] !== null && !isNaN(datum[\"undefined\"])"
+                },
+                {
                     "type": "extent",
                     "field": "Horsepower",
                     "signal": "child_Horsepower_bin_maxbins_10_Horsepower_extent"
@@ -95,6 +99,10 @@
                     "expr": "datum[\"Miles_per_Gallon\"] !== null && !isNaN(datum[\"Miles_per_Gallon\"])"
                 },
                 {
+                    "type": "filter",
+                    "expr": "datum[\"undefined\"] !== null && !isNaN(datum[\"undefined\"])"
+                },
+                {
                     "type": "extent",
                     "field": "Miles_per_Gallon",
                     "signal": "child_Miles_per_Gallon_bin_maxbins_10_Miles_per_Gallon_extent"
@@ -164,6 +172,10 @@
                 {
                     "type": "filter",
                     "expr": "datum[\"Acceleration\"] !== null && !isNaN(datum[\"Acceleration\"])"
+                },
+                {
+                    "type": "filter",
+                    "expr": "datum[\"undefined\"] !== null && !isNaN(datum[\"undefined\"])"
                 },
                 {
                     "type": "extent",

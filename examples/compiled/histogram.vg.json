@@ -19,6 +19,10 @@
                     "expr": "datum[\"IMDB_Rating\"] !== null && !isNaN(datum[\"IMDB_Rating\"])"
                 },
                 {
+                    "type": "filter",
+                    "expr": "datum[\"undefined\"] !== null && !isNaN(datum[\"undefined\"])"
+                },
+                {
                     "type": "extent",
                     "field": "IMDB_Rating",
                     "signal": "bin_maxbins_10_IMDB_Rating_extent"

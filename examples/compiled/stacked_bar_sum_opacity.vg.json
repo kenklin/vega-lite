@@ -17,16 +17,16 @@
             "transform": [
                 {
                     "type": "filter",
+                    "expr": "datum[\"people\"] !== null && !isNaN(datum[\"people\"])"
+                },
+                {
+                    "type": "filter",
                     "expr": "datum.year == 2000"
                 },
                 {
                     "type": "formula",
                     "expr": "datum.sex == 2 ? 'Female' : 'Male'",
                     "as": "gender"
-                },
-                {
-                    "type": "filter",
-                    "expr": "datum[\"people\"] !== null && !isNaN(datum[\"people\"])"
                 },
                 {
                     "type": "aggregate",

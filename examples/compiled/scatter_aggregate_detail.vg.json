@@ -17,6 +17,14 @@
             },
             "transform": [
                 {
+                    "type": "filter",
+                    "expr": "datum[\"Horsepower\"] !== null && !isNaN(datum[\"Horsepower\"])"
+                },
+                {
+                    "type": "filter",
+                    "expr": "datum[\"Displacement\"] !== null && !isNaN(datum[\"Displacement\"])"
+                },
+                {
                     "type": "aggregate",
                     "groupby": [
                         "Origin"

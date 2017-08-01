@@ -26,7 +26,11 @@
             "transform": [
                 {
                     "type": "filter",
-                    "expr": "datum[\"X\"] !== null && !isNaN(datum[\"X\"]) && datum[\"Y\"] !== null && !isNaN(datum[\"Y\"])"
+                    "expr": "datum[\"X\"] !== null && !isNaN(datum[\"X\"])"
+                },
+                {
+                    "type": "filter",
+                    "expr": "datum[\"Y\"] !== null && !isNaN(datum[\"Y\"])"
                 }
             ]
         },

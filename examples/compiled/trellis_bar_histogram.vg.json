@@ -18,6 +18,10 @@
                     "expr": "datum[\"Horsepower\"] !== null && !isNaN(datum[\"Horsepower\"])"
                 },
                 {
+                    "type": "filter",
+                    "expr": "datum[\"undefined\"] !== null && !isNaN(datum[\"undefined\"])"
+                },
+                {
                     "type": "extent",
                     "field": "Horsepower",
                     "signal": "child_bin_maxbins_15_Horsepower_extent"

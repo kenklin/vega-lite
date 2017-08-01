@@ -21,6 +21,14 @@
                     "as": "distance"
                 },
                 {
+                    "type": "filter",
+                    "expr": "datum[\"distance\"] !== null && !isNaN(datum[\"distance\"])"
+                },
+                {
+                    "type": "filter",
+                    "expr": "datum[\"undefined\"] !== null && !isNaN(datum[\"undefined\"])"
+                },
+                {
                     "type": "extent",
                     "field": "distance",
                     "signal": "layer_0_bin_maxbins_10_distance_extent"
@@ -37,10 +45,6 @@
                     "extent": {
                         "signal": "layer_0_bin_maxbins_10_distance_extent"
                     }
-                },
-                {
-                    "type": "filter",
-                    "expr": "datum[\"distance\"] !== null && !isNaN(datum[\"distance\"])"
                 },
                 {
                     "type": "aggregate",
@@ -70,6 +74,14 @@
                     "as": "distance"
                 },
                 {
+                    "type": "filter",
+                    "expr": "datum[\"distance\"] !== null && !isNaN(datum[\"distance\"])"
+                },
+                {
+                    "type": "filter",
+                    "expr": "datum[\"undefined\"] !== null && !isNaN(datum[\"undefined\"])"
+                },
+                {
                     "type": "extent",
                     "field": "distance",
                     "signal": "layer_1_bin_maxbins_10_distance_extent"
@@ -90,10 +102,6 @@
                 {
                     "type": "filter",
                     "expr": "datum.delay < 500"
-                },
-                {
-                    "type": "filter",
-                    "expr": "datum[\"distance\"] !== null && !isNaN(datum[\"distance\"])"
                 },
                 {
                     "type": "aggregate",

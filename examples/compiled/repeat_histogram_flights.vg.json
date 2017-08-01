@@ -34,6 +34,10 @@
                     "expr": "datum[\"distance\"] !== null && !isNaN(datum[\"distance\"])"
                 },
                 {
+                    "type": "filter",
+                    "expr": "datum[\"undefined\"] !== null && !isNaN(datum[\"undefined\"])"
+                },
+                {
                     "type": "extent",
                     "field": "distance",
                     "signal": "child_distance_bin_maxbins_20_distance_extent"
@@ -83,6 +87,10 @@
                     "expr": "datum[\"delay\"] !== null && !isNaN(datum[\"delay\"])"
                 },
                 {
+                    "type": "filter",
+                    "expr": "datum[\"undefined\"] !== null && !isNaN(datum[\"undefined\"])"
+                },
+                {
                     "type": "extent",
                     "field": "delay",
                     "signal": "child_delay_bin_maxbins_20_delay_extent"
@@ -130,6 +138,10 @@
                 {
                     "type": "filter",
                     "expr": "datum[\"time\"] !== null && !isNaN(datum[\"time\"])"
+                },
+                {
+                    "type": "filter",
+                    "expr": "datum[\"undefined\"] !== null && !isNaN(datum[\"undefined\"])"
                 },
                 {
                     "type": "extent",

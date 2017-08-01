@@ -20,6 +20,10 @@
                     "expr": "datum[\"Year\"] !== null && !isNaN(datum[\"Year\"])"
                 },
                 {
+                    "type": "filter",
+                    "expr": "datum[\"Weight_in_lbs\"] !== null && !isNaN(datum[\"Weight_in_lbs\"])"
+                },
+                {
                     "type": "formula",
                     "as": "year_Year",
                     "expr": "datetime(year(datum[\"Year\"]), 0, 1, 0, 0, 0, 0)"

@@ -4,38 +4,6 @@
   "data": {
     "url": "data/population.json"
   },
-  "transform": [
-    {
-      "summarize": [
-        {
-          "aggregate": "q1",
-          "field": "people",
-          "as": "lowerBox"
-        },
-        {
-          "aggregate": "q3",
-          "field": "people",
-          "as": "upperBox"
-        },
-        {
-          "aggregate": "median",
-          "field": "people",
-          "as": "midBox"
-        },
-        {
-          "aggregate": "min",
-          "field": "people",
-          "as": "lowerWhisker"
-        },
-        {
-          "aggregate": "max",
-          "field": "people",
-          "as": "upperWhisker"
-        }
-      ],
-      "groupby": []
-    }
-  ],
   "layer": [
     {
       "mark": {
@@ -44,14 +12,16 @@
       },
       "encoding": {
         "x": {
-          "field": "lowerWhisker",
-          "type": "quantitative",
           "axis": {
             "title": "population"
-          }
+          },
+          "aggregate": "min",
+          "field": "people",
+          "type": "quantitative"
         },
         "x2": {
-          "field": "lowerBox",
+          "aggregate": "q1",
+          "field": "people",
           "type": "quantitative"
         }
       }
@@ -63,11 +33,13 @@
       },
       "encoding": {
         "x": {
-          "field": "upperBox",
+          "aggregate": "q3",
+          "field": "people",
           "type": "quantitative"
         },
         "x2": {
-          "field": "upperWhisker",
+          "aggregate": "max",
+          "field": "people",
           "type": "quantitative"
         }
       }
@@ -79,11 +51,13 @@
       },
       "encoding": {
         "x": {
-          "field": "lowerBox",
+          "aggregate": "q1",
+          "field": "people",
           "type": "quantitative"
         },
         "x2": {
-          "field": "upperBox",
+          "aggregate": "q3",
+          "field": "people",
           "type": "quantitative"
         },
         "size": {
@@ -98,11 +72,15 @@
       },
       "encoding": {
         "x": {
-          "field": "midBox",
+          "aggregate": "median",
+          "field": "people",
           "type": "quantitative"
         },
         "size": {
           "value": 14
+        },
+        "color": {
+          "value": "white"
         }
       }
     }

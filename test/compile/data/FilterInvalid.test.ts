@@ -3,7 +3,6 @@
 import {assert} from 'chai';
 
 import {FilterInvalidNode} from '../../../src/compile/data/FilterInvalid';
-import {NonPositiveFilterNode} from '../../../src/compile/data/nonpositivefilter';
 import {ScaleType} from '../../../src/scale';
 import {VgTransform} from '../../../src/vega.schema';
 import {parseUnitModelWithScale} from '../../util';

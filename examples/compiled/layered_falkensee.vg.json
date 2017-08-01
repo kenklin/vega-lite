@@ -204,7 +204,11 @@
                 },
                 {
                     "type": "filter",
-                    "expr": "datum[\"year\"] !== null && !isNaN(datum[\"year\"]) && datum[\"population\"] !== null && !isNaN(datum[\"population\"])"
+                    "expr": "datum[\"year\"] !== null && !isNaN(datum[\"year\"])"
+                },
+                {
+                    "type": "filter",
+                    "expr": "datum[\"population\"] !== null && !isNaN(datum[\"population\"])"
                 },
                 {
                     "type": "formula",
@@ -229,7 +233,11 @@
                 },
                 {
                     "type": "filter",
-                    "expr": "datum[\"year\"] !== null && !isNaN(datum[\"year\"]) && datum[\"population\"] !== null && !isNaN(datum[\"population\"])"
+                    "expr": "datum[\"year\"] !== null && !isNaN(datum[\"year\"])"
+                },
+                {
+                    "type": "filter",
+                    "expr": "datum[\"population\"] !== null && !isNaN(datum[\"population\"])"
                 },
                 {
                     "type": "formula",

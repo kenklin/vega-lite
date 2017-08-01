@@ -12,6 +12,10 @@
             },
             "transform": [
                 {
+                    "type": "filter",
+                    "expr": "datum[\"undefined\"] !== null && !isNaN(datum[\"undefined\"])"
+                },
+                {
                     "type": "aggregate",
                     "groupby": [
                         "Name"

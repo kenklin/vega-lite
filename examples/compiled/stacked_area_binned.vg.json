@@ -17,6 +17,10 @@
             "transform": [
                 {
                     "type": "filter",
+                    "expr": "datum[\"Horsepower\"] !== null && !isNaN(datum[\"Horsepower\"])"
+                },
+                {
+                    "type": "filter",
                     "expr": "datum[\"Acceleration\"] !== null && !isNaN(datum[\"Acceleration\"])"
                 },
                 {

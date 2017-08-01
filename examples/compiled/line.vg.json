@@ -18,11 +18,26 @@
             "transform": [
                 {
                     "type": "filter",
-                    "expr": "datum.symbol==='GOOG'"
+                    "expr": "datum[\"date\"] !== null && !isNaN(datum[\"date\"])"
                 },
                 {
                     "type": "filter",
+<<<<<<< d0766d55192880cdef1e90d253ad2eb858df8429:examples/compiled/line.vg.json
                     "expr": "datum[\"date\"] !== null && !isNaN(datum[\"date\"]) && datum[\"price\"] !== null && !isNaN(datum[\"price\"])"
+=======
+                    "expr": "datum[\"price\"] !== null && !isNaN(datum[\"price\"])"
+                },
+                {
+                    "type": "filter",
+                    "expr": "datum.symbol==='GOOG'"
+                },
+                {
+                    "type": "collect",
+                    "sort": {
+                        "field": "date",
+                        "order": "descending"
+                    }
+>>>>>>> updated examples:examples/vg-specs/line.vg.json
                 }
             ]
         }

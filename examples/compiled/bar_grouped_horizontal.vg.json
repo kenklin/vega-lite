@@ -23,6 +23,10 @@
                     "as": "gender"
                 },
                 {
+                    "type": "filter",
+                    "expr": "datum[\"people\"] !== null && !isNaN(datum[\"people\"])"
+                },
+                {
                     "type": "aggregate",
                     "groupby": [
                         "gender",
