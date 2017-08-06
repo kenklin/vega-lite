@@ -126,7 +126,11 @@ import {
         it(`should work with shared scales in ${specType} views`, function() {
           for (let i = 0; i < hits[specType].length; i++) {
             embed(spec(specType, 0, {type, ...binding},
+<<<<<<< HEAD
               {resolve: {scale: {x:'shared', y: 'shared'}}}));
+=======
+              {resolve: {scale: {x: 'shared', y: 'shared'}}}));
+>>>>>>> a0c15b74... Make layout header uses the right style
             const parent = parentSelector(specType, i);
             const xscale = browser.execute('return view._runtime.scales.x.value.domain()').value;
             const yscale = browser.execute('return view._runtime.scales.y.value.domain()').value;
